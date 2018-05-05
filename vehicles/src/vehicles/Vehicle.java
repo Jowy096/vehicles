@@ -6,9 +6,15 @@ public class Vehicle {
 	private int Portes;
 	private double velocitat_actual;
 	
-	public  Vehicle(double velocitat_actual){
+	public Vehicle(int cilindrada, int portes, double velocitat_actual) {
+		super();
+		this.cilindrada = cilindrada;
+		Portes = portes;
+		this.velocitat_actual = velocitat_actual;
 		
-		this.velocitat_actual=velocitat_actual;
+		velocitat_actual =0;
 	}
-
+	
+	
+	
 }
