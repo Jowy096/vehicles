@@ -10,5 +10,24 @@ public class Vehicle {
 		
 		this.velocitat_actual=velocitat_actual;
 	}
+	
+	public  double Accelerar(){
+		
+		if(velocitat_actual< VELOCITAT_MAXIMA){
+			
+			velocitat_actual =velocitat_actual + 10;
+			
+		}	
+		return velocitat_actual;
+	}
+public  double Desaccelerar(){
+		
+		if(velocitat_actual >0){
+			
+			velocitat_actual =velocitat_actual - 10;
+			
+		}	
+		return velocitat_actual;
+	}
 
 }
