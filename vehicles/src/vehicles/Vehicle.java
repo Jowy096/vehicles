@@ -5,6 +5,9 @@ public class Vehicle {
 	private int cilindrada;
 	private int Portes;
 	private double velocitat_actual;
+	public int marxes=5;
+	public int marxaActual=0;
+	
 
 	public Vehicle(int cilindrada, int portes, double velocitat_actual) {
 		super();
@@ -33,6 +36,24 @@ public class Vehicle {
 
 		}
 		return velocitat_actual;
+	}
+	public double pujarMarxa() {
+
+		if (marxaActual < marxes) {
+
+			marxaActual = marxaActual +1;
+
+		}
+		return marxaActual;
+	}
+	public double baixaMarxa() {
+
+		if (marxaActual < marxes && marxaActual>0) {
+
+			velocitat_actual = velocitat_actual - 1;
+
+		}
+		return marxaActual;
 	}
 
 }
